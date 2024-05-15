@@ -42,4 +42,8 @@ To set up the web crawler, follow these steps:
   streamlit run app.py
 
 
+
+**Screenshots**
+
 https://github.com/RashadMoqa/Web-Crawling/assets/73494887/5c0c3908-4de0-4075-a6ed-6e774432cc67
+https://github.com/RashadMoqa/Web-Crawling/assets/73494887/6e995d69-4a1b-4754-aaef-15e4f8c0fee7
