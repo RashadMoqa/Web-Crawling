@@ -5,11 +5,11 @@ import numpy as np
 from qdrant_client import QdrantClient
 import streamlit as st
 
-# Initialize OpenAI API key
-openai.api_key = 'sk-proj-EY0xN0jM7LOnluL5LnpuT3BlbkFJmxopoUPFBZ2pbKQDwKvc'
+# Initialize the OpenAI client
+client = openai.OpenAI(api_key='sk-proj-nGOpotUiQpS9xMTyhqR0T3BlbkFJZ3WLqQsN0SwXURiWNH0L')
 
 # Connect to Qdrant server
-client = QdrantClient("http://localhost:8501")
+Qdrant_client = QdrantClient("http://localhost:8501")
 
 # Load data from Excel
 df = pd.read_excel("output-10.xlsx")
@@ -19,11 +19,11 @@ documents = df[['Name', 'Email', 'Activities', 'City']].astype(str).agg(', '.joi
 
 # Function to get embeddings
 def get_embeddings(texts):
-    response = openai.Embedding.create(
+    response = client.embeddings.create(
         model="text-embedding-ada-002",
         input=texts
     )
-    embeddings = [data['embedding'] for data in response['data']]
+    embeddings = [data.embedding for data in response.data]
     return embeddings
 
 # Generate embeddings for the documents
@@ -49,7 +49,7 @@ def search_and_generate(query, k=5):
     prompt = f"The following documents are relevant to the query: {query}\n{context}\n\nBased on the above documents, provide a detailed response to the query."
 
     # Use gpt-3.5-turbo to generate a response
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
@@ -57,8 +57,7 @@ def search_and_generate(query, k=5):
         ],
         max_tokens=200
     )
-    
-    generated_response = response.choices[0].message['content'].strip()
+    generated_response = response.choices[0].message.content.strip()
     return retrieved_docs, generated_response
 
 # Streamlit app
