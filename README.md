@@ -27,20 +27,22 @@ To set up the web crawler, follow these steps:
 
 1. Clone the repository to your local machine:
 
-   ```bash
+   ```
    git clone https://github.com/your-username/web-crawler.git
-
+   ```
+   
 2.  Install the necessary libraries:
 
-   ```bash
+   ```
    pip install -r requirements.txt
-
+   ```
 
 3.  Run web crawler:
+   ```
    python web_crawler.py
    python semantic_search.py
   streamlit run app.py
-
+   ```
 
 
 **Screenshots**
