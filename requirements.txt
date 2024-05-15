@@ -1,0 +1,10 @@
+bs4==0.0.2
+faiss-cpu==1.8.0
+numpy==1.24.0
+openai==0.28.0
+pandas==2.2.2
+qdrant_client==1.9.1
+requests==2.31.0
+selenium==4.20.0
+streamlit==1.34.0
+webdriver_manager==4.0.1
