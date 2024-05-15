@@ -41,3 +41,6 @@ To set up the web crawler, follow these steps:
    python semantic_search.py
   streamlit run app.py
 
+
+![Screenshot 2024-05-15 114307](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/68022239-08ae-489a-8856-9331ca17b04c)
+
