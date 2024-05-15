@@ -44,3 +44,5 @@ To set up the web crawler, follow these steps:
 
 ![Screenshot 2024-05-15 114307](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/68022239-08ae-489a-8856-9331ca17b04c)
 
+![Screenshot 2024-05-15 114858](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/60dcb156-b0ca-4359-9c68-6c50933b2f9c)
+
