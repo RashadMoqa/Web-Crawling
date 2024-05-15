@@ -37,7 +37,7 @@ To set up the web crawler, follow these steps:
    pip install -r requirements.txt
    ```
 
-3.  Run web crawler:
+3.  Run web crawler, semantic search back-end or front-end respectively:
    ```
    python web_crawler.py
    python semantic_search.py
@@ -50,3 +50,5 @@ To set up the web crawler, follow these steps:
 ![output](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/db73e186-8b60-47e2-a547-79e34d7b41c8)
 
 ![front-end](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/bdc3e8b0-0421-4479-8d3a-1bfa90e27a9c)
+
+![front-end2](https://github.com/RashadMoqa/Web-Crawling/assets/73494887/932ae375-4fcb-4980-ad3e-b3ef536d91aa)
